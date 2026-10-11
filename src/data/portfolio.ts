@@ -9,7 +9,7 @@ import type { L } from "@/lib/i18n";
 export const profile = {
   name: "Seohyeon Kim",
   nameKo: "김서현",
-  role: { ko: "풀스택 개발자", en: "Full-stack Developer" } as L,
+  role: { ko: "모바일 · 웹 개발자", en: "Mobile & Web Developer" } as L,
   origin: { ko: "Android 출신 · 기획 병행", en: "Android roots · Product planning" } as L,
   years: "9+",
   headline: {
@@ -45,8 +45,8 @@ export const nav = [
 ];
 
 export const aboutText: L = {
-  ko: "Android 앱 개발로 시작해 iOS, 웹, 백엔드로 영역을 넓혀 왔습니다. 결제와 교통처럼 현장에서 바로 쓰이는 서비스를 기획부터 개발까지 맡아, 실제로 잘 돌아가는 제품으로 만드는 데 집중합니다.",
-  en: "I started in Android development and have grown into iOS, web and backend. I focus on services used right in the field, such as payments and transportation, and take them from planning through development so they work well in practice.",
+  ko: "Android 앱 개발로 시작해 iOS와 웹, Supabase 기반 서버 로직까지 영역을 넓혀 왔습니다. 결제와 교통처럼 현장에서 바로 쓰이는 서비스를 기획부터 개발까지 맡아, 실제로 잘 돌아가는 제품으로 만드는 데 집중합니다.",
+  en: "I started in Android development and have grown into iOS, web and Supabase-based server logic. I focus on services used right in the field, such as payments and transportation, and take them from planning through development so they work well in practice.",
 };
 
 export const stats = [
@@ -478,7 +478,7 @@ export const skillGroups: { title: string; items: { name: string; note: L }[] }[
     ],
   },
   {
-    title: "Backend / BaaS",
+    title: "Server / BaaS",
     items: [
       { name: "Supabase", note: { ko: "NTA 실시간 위치, 모바일 오더 어드민 API(Edge Functions), 웹사이트 관리자 콘솔에 사용했습니다.", en: "Used for NTA live location, the Mobile Order admin API (Edge Functions) and the website admin console." } },
       { name: "Firebase", note: { ko: "FCM 푸시, Cloud Firestore 실시간 채팅.", en: "FCM push and Cloud Firestore realtime chat." } },

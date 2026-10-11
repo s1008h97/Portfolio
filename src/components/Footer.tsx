@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="border-t border-line bg-bg text-muted">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 text-sm md:flex-row md:items-center md:justify-between">
         <p>
-          {profile.name} · Full-stack Developer
+          {profile.name} · Mobile & Web Developer
         </p>
         <ul className="flex gap-6">
           <li><a className="ulink" href={profile.github} target="_blank" rel="noreferrer">GitHub</a></li>

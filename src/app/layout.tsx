@@ -12,8 +12,8 @@ const serif = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["nor
 const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Seohyeon Kim — Full-stack Developer",
-  description: "9+ years across Android, web and backend. NFC, payments, Supabase, and product planning.",
+  title: "Seohyeon Kim — Mobile & Web Developer",
+  description: "9+ years building Android, iOS and web products. NFC, payments, Supabase, and product planning.",
 };
 
 const themeScript = `(function(){try{var s=localStorage.getItem('theme');var d=s?s==='dark':matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.dataset.theme=d?'dark':'light'}catch(e){}})()`;
