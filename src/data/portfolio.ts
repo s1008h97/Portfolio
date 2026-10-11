@@ -27,7 +27,7 @@ export const profile = {
 
 export const facts: { k: L; v: L }[] = [
   { k: { ko: "지금", en: "Now" }, v: { ko: "TouchNgo — NFC 결제 SDK, 모바일 오더, 웹", en: "TouchNgo — NFC payment SDK, Mobile Order, web" } },
-  { k: { ko: "경력", en: "Since" }, v: { ko: "2017 · Android 개발로 시작", en: "2017 · Started in Android" } },
+  { k: { ko: "경력", en: "Since" }, v: { ko: "2017 — 현재", en: "2017 — ongoing" } },
   { k: { ko: "주력", en: "Focus" }, v: { ko: "Android · iOS · NFC", en: "Android · iOS · NFC" } },
   { k: { ko: "스택", en: "Stack" }, v: { ko: "Kotlin, Swift, Next.js, Supabase", en: "Kotlin, Swift, Next.js, Supabase" } },
   { k: { ko: "기획", en: "Product" }, v: { ko: "서비스 기획 · 사업계획서 · Figma", en: "Planning · Business plans · Figma" } },
