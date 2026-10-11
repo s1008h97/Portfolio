@@ -101,10 +101,10 @@ public/apps/           작업 화면 이미지
 `main` 브랜치에 푸시하면 `.github/workflows/nextjs.yml`이 빌드해서 GitHub Pages에 배포합니다.
 
 - 저장소 **Settings → Pages → Source**가 **GitHub Actions**여야 합니다.
-- GitHub Pages는 `/<저장소 이름>/` 아래에서 서비스됩니다. [`next.config.ts`](next.config.ts)가 Actions 환경에서
-  저장소 이름으로 `basePath`를 자동 계산하고, `public/` 이미지 경로(`src/lib/asset.ts`)도 같은 값을 씁니다.
-- 로컬에서는 `basePath`가 비어 있어 `http://localhost:3000/`에서 바로 열립니다.
-- 사용자 도메인을 쓸 때는 `NEXT_PUBLIC_BASE_PATH=""`로 빌드하세요.
+- GitHub Pages는 `/<저장소 이름>/` 아래에서 서비스됩니다. 페이지·스크립트·스타일 경로는 `basePath`로 처리됩니다.
+  ([`next.config.ts`](next.config.ts)가 Actions 환경에서 저장소 이름으로 자동 계산)
+- `public/` 이미지는 `src/lib/asset.ts`가 **상대 경로**로 바꿔 주기 때문에, 하위 경로(GitHub Pages)와 루트(localhost, 사용자 도메인)
+  어디에서도 같은 코드로 보입니다. `<img>`에 직접 `/apps/...`처럼 절대 경로를 쓰지 마세요.
 
 ## 인터랙션과 접근성
 
