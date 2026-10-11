@@ -12,8 +12,30 @@ const serif = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["nor
 const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains", display: "swap" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://s1008h97.github.io/Portfolio/"),
   title: "Seohyeon Kim — Mobile & Web Developer",
   description: "9+ years building Android, iOS and web products. NFC, payments, Supabase, and product planning.",
+  openGraph: {
+    type: "website",
+    url: "https://s1008h97.github.io/Portfolio/",
+    siteName: "Seohyeon Kim — Portfolio",
+    title: "Seohyeon Kim — Mobile & Web Developer",
+    description: "모바일·웹 개발자 김서현의 포트폴리오. Android, iOS, NFC 결제와 서비스 기획 경험을 소개합니다.",
+    locale: "ko_KR",
+    alternateLocale: ["en_US"],
+    images: [{
+      url: "https://s1008h97.github.io/Portfolio/portfolio-share-v2.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Seohyeon Kim — Mobile & Web Developer",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Seohyeon Kim — Mobile & Web Developer",
+    description: "Android, iOS, web development and product planning.",
+    images: ["https://s1008h97.github.io/Portfolio/portfolio-share-v2.jpg"],
+  },
 };
 
 const themeScript = `(function(){try{var s=localStorage.getItem('theme');var d=s?s==='dark':matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.dataset.theme=d?'dark':'light'}catch(e){}})()`;
